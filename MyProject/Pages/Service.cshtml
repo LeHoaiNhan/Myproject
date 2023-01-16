@@ -1,0 +1,215 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Dịch vụ";
+}
+<h1>@ViewData["Title"]</h1>
+<style>
+    .product-name-name {
+        font-weight: bold;
+        line-height: 20px;
+        /* overflow: hidden; */
+        font-size: 13px;
+        display: block;
+        color: #e97ed1;
+    }
+
+    .product-grid > li .product-name {
+        bottom: 25px;
+        left: 5px;
+        max-width: 100%;
+        text-transform: initial;
+        width: 55%;
+        float: left;
+    }
+
+    .white-space {
+        /*white-space: nowrap;*/
+        float: left;
+    }
+
+    .product-grid {
+        list-style: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+        .product-grid > li {
+            float: left;
+            width: 100%;
+            margin: 0 10px 15px 0;
+            border: none;
+        }
+
+            .product-grid > li .customer-booking-total {
+                font-weight: bold;
+                width: 25%;
+                float: left;
+                text-align: right;
+                color: #000;
+            }
+
+            .product-grid > li .product-sku {
+                color: #999;
+                width: 20%;
+                float: left;
+                text-align: right;
+            }
+
+    .product-name-description {
+        font-size: 12px;
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #999;
+        text-align: justify;
+        max-width: 100%;
+    }
+
+    .product-grid > li .product-sku {
+        color: #999;
+        width: 20%;
+        float: left;
+        text-align: right;
+    }
+
+    .price-cash {
+        color: #66bb6a;
+        position: relative;
+        white-space: nowrap;
+    }
+
+    .pull-right {
+        float: right !important;
+    }
+</style>
+<div class="row">
+    <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-8 col-md-offset-2">
+
+
+        <ul class="product-grid">
+
+            <li>
+                <span>Filter: </span>
+                <select id="locationSelect2" style="width: 100%" class="select2 form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+
+                    <option value="597" address="20 Quang Trung, Hoàn Kiếm, Hà Nội">Nailroom Quang Trung - Hà Nội</option>
+
+                    <option value="606" address="148B Võ Thị Sáu, Phường Võ Thị Sáu, Quận 3, TP Hồ Chí Minh">Nailroom Võ Thị Sáu - Q3 - HCM</option>
+
+                    <option value="607" address="26 N7B Trung Hòa - Nhân Chính, Thanh Xuân, Hà Nội">Nailroom Hoàng Minh Giám - Hà Nội</option>
+
+                    <option value="1435" address="62 Nguyễn Văn Tráng, phường Bến Thành, Quận 1, TP Hồ Chí Minh">Nailroom Nguyễn Văn Tráng - Quận 1 - HCM</option>
+
+                    <option value="1449" address="36 Nguyễn Thái Học, , ">Nailroom Đà Nẵng</option>
+
+                    <option value="1450" address="202 Lê Văn Sỹ, Phường 10, Phú Nhuận, TP Hồ Chí Minh">Nailroom Lê Văn Sỹ - HCM</option>
+
+                    <option value="1452" address="56 Đào Tấn, Ba Đình, Hà Nội">Nailroom Đào Tấn - Hà Nội</option>
+
+                    <option value="1455" address="517 Quang Trung, Phường 10, Gò Vấp, TP Hồ Chí Minh">Nailroom Gò Vấp - HCM</option>
+
+                    <option value="1457" address="30 Nguyễn Trãi, Phường 3, Quận 5, TP Hồ Chí Minh">Nailroom Quận 5, HCM</option>
+
+                    <option value="1458" address="149 Hoàng Ngân, phường Trung Hoà, Cầu Giấy, Hà Nội">Nailroom Hoàng Ngân - Hà Nội</option>
+
+                    <option value="1459" address="539B Nguyễn Thị Thập, P. Tân Phong, Quận 7, TP Hồ Chí Minh">Nailroom Nguyễn Thị Thập - Q7 - HCM</option>
+
+                    <option value="1460" address="13 toà B14 Kim Liên, Phạm Ngọc Thạch, p Trung Tự, Đống Đa, Hà Nội">Nailroom Phạm Ngọc Thạch - Hà Nội</option>
+
+                    <option value="1461" address="42 Hoa Sứ, Phường 2, Phú Nhuận, TP Hồ Chí Minh">Nailroom Hoa Sứ - Phú Nhuận</option>
+
+                    <option value="1463" address="99 Tân Vĩnh, Phường 6, Quận 4, TP Hồ Chí Minh">Nailroom Quận 4 - HCM</option>
+
+                    <option value="1464" address="65 Võ Oanh, Phường 25, Bình Thạnh, TP Hồ Chí Minh">Nailroom Bình Thạnh - HCM</option>
+
+                    <option value="1467" address="291 Võ Văn Ngân, khu phố 5, phường Linh Chiểu, Thủ Đức, TP Hồ Chí Minh">Nailroom Thủ Đức</option>
+
+                    <option value="1468" address="17 Xuân Thuỷ, phường Thảo Điền, Quận 2, TP Hồ Chí Minh">Nailroom Thảo Điền - HCM</option>
+
+                    <option value="1469" address="15 Trần Minh Quyền, Phường 10, Quận 10, TP Hồ Chí Minh">Nailroom 15 Trần Minh Quyền - Quận 10</option>
+
+                    <option value="1470" address="244 Lạc Long Quân, Phường 10, Quận 11, TP Hồ Chí Minh">Nailroom Quận 11 - HCM</option>
+
+                </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-locationSelect2-container"><span class="select2-selection__rendered" id="select2-locationSelect2-container" title="Nailroom Quang Trung - Hà Nội">Nailroom Quang Trung - Hà Nội</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </li>
+        </ul>
+
+        <ul id="product-grid" class="product-grid">
+            <li style="text-transform: uppercase; font-weight: bold; text-decoration: underline;">Dịch vụ móng</li>
+            <li>
+                <div class="product-name">
+                    <span class="product-name-name">
+                        <span class="num-counter">1</span>.1. Chăm sóc móng (Nail care)</span>
+                        <span class="product-name-description white-space" id="des1" title="NAIL ROOM CHẮC CHẮN LÀ ĐỊA ĐIỂM KHÔNG THỂ BỎ QUA CỦA CÁC TÍN ĐỒ LÀM NAILS
+Chúng mình chọn lọc đội ngũ nhân viên được training bài bản và khắt khe.
+Hơn 300 màu sơn Hàn Quốc đa dạng và chất lượng.
+Hàng trăm mẫu đá, hạt, charm trang trí hot nhất hiện nay.">
+                        NAIL ROOM CHẮC CHẮN LÀ ĐỊA ĐIỂM KHÔNG THỂ BỎ QUA CỦA CÁC TÍN ĐỒ LÀM NAILS
+
+                        Chúng mình chọn lọc đội ngũ nhân viên được training bài bản và khắt khe.
+                        Hơn 300 màu sơn Hàn Quốc đa dạng và chất lượng.
+                        Hàng trăm mẫu đá, hạt, charm trang trí hot nhất hiện nay.
+                    </span>
+                </div><div class="customer-booking-total pull-right price-cash">From 0 đ</div><div class="product-sku pull-right text-left">60 min</div>
+            </li>
+            <li><div class="product-name"><span class="product-name-name"><span class="num-counter">2</span>.CHÀ GÓT CHÂN</span><span class="product-name-description white-space" id="des2" title="130 - 250k tuỳ sản phẩm chăm sóc dùng kèm">130 - 250k tuỳ sản phẩm chăm sóc dùng kèm</span></div><div class="customer-booking-total pull-right price-cash">From 130,000 đ</div><div class="product-sku pull-right text-left">30 min</div></li>
+            <li style="text-transform: uppercase; font-weight: bold; text-decoration: underline;">Eyelashes</li>
+            <li>
+                <div class="product-name">
+                    <span class="product-name-name"><span class="num-counter">3</span>.2. Nối mi classic (Eyelashes extension)</span><span class="product-name-description white-space" id="des3" title="Hà Nội: tuỳ độ dày có thể tăng hoặc giảm 20-30k
+HCM: nối mi mỏng: 250; nối dày: 300k">
+                        Hà Nội: tuỳ độ dày có thể tăng hoặc giảm 20-30k
+                        HCM: nối mi mỏng: 250; nối dày: 300k
+                    </span>
+                </div><div class="customer-booking-total pull-right price-cash">From 250,000 đ</div><div class="product-sku pull-right text-left">60 min</div>
+            </li>
+            <li><div class="product-name"><span class="product-name-name"><span class="num-counter">4</span>.3. Nối mi Kylie (Kylie eyelashes style)</span><span class="product-name-description white-space" id="des4" title="Tùy độ dày mỏng tăng hoặc giảm 20k ~ 30k">Tùy độ dày mỏng tăng hoặc giảm 20k ~ 30k</span></div><div class="customer-booking-total pull-right price-cash">From 300,000 đ</div><div class="product-sku pull-right text-left">70 min</div></li>
+            <li>
+                <div class="product-name">
+                    <span class="product-name-name"><span class="num-counter">5</span>.4. Uốn mi (Eyelashes curling)</span><span class="product-name-description white-space" id="des5" title="Dùng thuốc uốn mi Hàn: 250k
+Thuốc uốn mi Việt - Trung: 200k">
+                        Dùng thuốc uốn mi Hàn: 250k
+                        Thuốc uốn mi Việt - Trung: 200k
+                    </span>
+                </div><div class="customer-booking-total pull-right price-cash">From 220,000 đ</div><div class="product-sku pull-right text-left">40 min</div>
+            </li>
+            <li><div class="product-name"><span class="product-name-name"><span class="num-counter">6</span>.Tháo mi (remove eyelashes)</span><span class="product-name-description white-space" id="des6" title=""></span></div><div class="customer-booking-total pull-right price-cash">From 40,000 đ</div><div class="product-sku pull-right text-left">15 min</div></li>
+            <li style="text-transform: uppercase; font-weight: bold; text-decoration: underline;">Phun thêu</li>
+            <li>
+                <div class="product-name">
+                    <span class="product-name-name"><span class="num-counter">7</span>.Điêu khắc lông mày (Microblading eyebrows)</span><span class="product-name-description white-space" id="des7" title="Chuyên viên VN: 2.190.000
+Chuyên viên HQ: 3.190.000">
+                        Chuyên viên VN: 2.190.000
+                        Chuyên viên HQ: 3.190.000
+                    </span>
+                </div><div class="customer-booking-total pull-right price-cash">From 2,190,000 đ</div><div class="product-sku pull-right text-left">90 min</div>
+            </li>
+            <li>
+                <div class="product-name">
+                    <span class="product-name-name"><span class="num-counter">8</span>.Phun lông mày (Eyebrow spray)</span><span class="product-name-description white-space" id="des8" title="Chuyên viên VN: 2.990.000
+Chuyên viên HQ: 3.990.000">
+                        Chuyên viên VN: 2.990.000
+                        Chuyên viên HQ: 3.990.000
+                    </span>
+                </div><div class="customer-booking-total pull-right price-cash">From 2,990,000 đ</div><div class="product-sku pull-right text-left">90 min</div>
+            </li>
+            <li>
+                <div class="product-name">
+                    <span class="product-name-name"><span class="num-counter">9</span>.Phun môi collagen</span><span class="product-name-description white-space" id="des9" title="Chuyên viên VN: 2.990.000
+Chuyên viên HQ: 3.990.000">
+                        Chuyên viên VN: 2.990.000
+                        Chuyên viên HQ: 3.990.000
+                    </span>
+                </div><div class="customer-booking-total pull-right price-cash">From 2,990,000 đ</div><div class="product-sku pull-right text-left">90 min</div>
+            </li>
+            <li style="text-transform: uppercase; font-weight: bold; text-decoration: underline;">Wax</li>
+            <li><div class="product-name"><span class="product-name-name"><span class="num-counter">10</span>.Wax 1/2 tay</span><span class="product-name-description white-space" id="des10" title=""></span></div><div class="customer-booking-total pull-right price-cash">From 190,000 đ</div><div class="product-sku pull-right text-left">30 min</div></li>
+            <li><div class="product-name"><span class="product-name-name"><span class="num-counter">11</span>.Wax lông mày</span><span class="product-name-description white-space" id="des11" title=""></span></div><div class="customer-booking-total pull-right price-cash">From 180,000 đ</div><div class="product-sku pull-right text-left">30 min</div></li>
+            <li><div class="product-name"><span class="product-name-name"><span class="num-counter">12</span>.wax mep</span><span class="product-name-description white-space" id="des12" title=""></span></div><div class="customer-booking-total pull-right price-cash">From 90,000 đ</div><div class="product-sku pull-right text-left">30 min</div></li>
+            <li><div class="product-name"><span class="product-name-name"><span class="num-counter">13</span>.Wax nách</span><span class="product-name-description white-space" id="des13" title=""></span></div><div class="customer-booking-total pull-right price-cash">From 145,000 đ</div><div class="product-sku pull-right text-left">30 min</div></li>
+        </ul>
+
+    </div>
+</div>

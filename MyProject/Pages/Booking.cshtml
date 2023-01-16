@@ -1,0 +1,289 @@
+﻿@page
+@model BookingModel
+@{
+    ViewData["Title"] = "Booking";
+} 
+
+@section Scripts{
+    <script src="~/js/booking.js" asp-append-version="true"></script>
+}
+<div class="text-center">
+    <h1 class="display-4">Sương  NAIL - ĐẶT LỊCH</h1>
+    <p>booking</p>
+</div>
+<div class="container" style="background-color:lemonchiffon">
+    <div class="form-group">
+        <label for="exampleInputPassword1">Thông tin khách hàng</label>
+        <input type="text" class="form-control" id="" placeholder="số điện thoại">
+      </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col">
+            <input type="text" class="form-control" id="" placeholder="Họ và tên">
+            </div>
+            <div class="col">
+             <input id="cbb_sex"/>
+            </div> 
+        </div> 
+    </div>
+    <p class="text-bold theme-text">Vị trí cửa hàng</p>
+    <div> 
+         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex flex-stack text-start p-6 mb-1 active">
+            <!--end::Description-->
+            <div class="d-flex align-items-center me-2">
+                <!--begin::Radio-->
+                <div class="form-check form-check-custom form-check-solid form-check-primary me-6">
+                    <input class="form-check-input" type="radio" name="plan2" value="1">
+                </div>
+                <!--end::Radio-->
+
+                <!--begin::Info-->
+                <div class="flex-grow-1">
+                    <h2 class="d-flex align-items-center fs-3 fw-bold flex-wrap">
+                        TP.Sadec
+                    </h2>
+                    <div class="fw-semibold opacity-50">
+                        Số 16 đường Trần Phú, Phường 1, TP.SaĐéc, Đồng Tháp
+                    </div>
+                </div>
+                <!--end::Info-->
+            </div>
+            <!--end::Description-->
+
+            <!--begin::Price-->
+            <div class="ms-5" style="width:100px;max-height:75px;margin-left: auto !important;">
+               <img style="width:100px;max-height:75px" src="~/img/p2.jpg"/>
+            </div>
+            <!--end::Price-->
+        </label>
+        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex flex-stack text-start p-6 mb-1 active">
+            <!--end::Description-->
+            <div class="d-flex align-items-center me-2">
+                <!--begin::Radio-->
+                <div class="form-check form-check-custom form-check-solid form-check-primary me-6">
+                    <input class="form-check-input" type="radio" name="plan2" value="2">
+                </div>
+                <!--end::Radio-->
+
+                <!--begin::Info-->
+                <div class="flex-grow-1">
+                    <h2 class="d-flex align-items-center fs-3 fw-bold flex-wrap">
+                        TP.Cao lãnh
+                    </h2>
+                    <div class="fw-semibold opacity-50">
+                        Số 68 đường 30 Tháng 4, Phường 1, TP.Cao Lãnh, Đồng Tháp
+                    </div>
+                </div>
+                <!--end::Info-->
+            </div>
+            <!--end::Description-->
+
+            <!--begin::Price-->
+            <div class="ms-5" style="width:100px;max-height:75px;margin-left: auto !important;">
+               <img style="width:100px;max-height:75px" src="~/img/p1.jpg"/>
+            </div>
+            <!--end::Price-->
+        </label>
+    </div>
+
+    
+    <p class="text-bold theme-text">Ngày đặt lịch</p>
+    <div> 
+         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary   flex-stack text-start p-6 mb-1 active">
+            <!--end::Description-->
+            <div class="d-flex align-items-center me-2">
+                <!--begin::Radio-->
+                <div class="form-check form-check-custom form-check-solid form-check-primary me-6">
+                    <input class="form-check-input" type="radio" name="plan" value="1">
+                </div>
+                <!--end::Radio-->
+
+                <!--begin::Info-->
+                <div class="flex-grow-1">
+                    <h3 class="d-flex align-items-center fs-3 fw-bold flex-wrap">
+                        Hôm nay
+                    </h3> 
+                </div>
+                <!--end::Info-->
+            </div>
+            <!--end::Description--> 
+        </label> 
+         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary   flex-stack text-start p-6 mb-1 active">
+            <!--end::Description-->
+            <div class="d-flex align-items-center me-2">
+                <!--begin::Radio-->
+                <div class="form-check form-check-custom form-check-solid form-check-primary me-6">
+                    <input class="form-check-input" type="radio" name="plan" value="1">
+                </div>
+                <!--end::Radio-->
+
+                <!--begin::Info-->
+                <div class="flex-grow-1">
+                    <h3 class="d-flex align-items-center fs-3 fw-bold flex-wrap">
+                        Ngày mai
+                    </h3> 
+                </div>
+                <!--end::Info-->
+            </div>
+            <!--end::Description--> 
+        </label> 
+         <label class="btn btn-outline btn-outline-dashed btn-active-light-primary   flex-stack text-start p-6 mb-1 active">
+            <!--end::Description-->
+            <div class="d-flex align-items-center me-2">
+                <!--begin::Radio-->
+                <div class="form-check form-check-custom form-check-solid form-check-primary me-6">
+                    <input class="form-check-input" type="radio" name="plan" value="1">
+                </div>
+                <!--end::Radio-->
+
+                <!--begin::Info-->
+                <div class="flex-grow-1">
+                    <h3 class="d-flex align-items-center fs-3 fw-bold flex-wrap">
+                        Ngày mốt
+                    </h3> 
+                </div>
+                <!--end::Info-->
+            </div>
+            <!--end::Description--> 
+        </label> 
+    </div>
+    <p class="text-bold theme-text">Nhân viên chăm sóc</p>
+    <input id="customers" style="width:100%;max-width:500px;"/>
+     
+    <div class="row">     
+        <div class="col-xs-12 mb-20">
+            <span id="time-select">Thời gian</span>
+            <div id="timeFrame">
+                <button type="button" time-frame="08:00" class="btn btn-default time-frame mb-10 disable-click btn-time-danger">
+                    <div class="time">08:00</div>
+                    <div class="slot">Full</div>
+                </button>
+                    <button type="button" time-frame="08:30" class="btn btn-default time-frame mb-10 disable-click btn-time-danger"><div class="time">08:30</div><div class="slot">Full</div></button><button type="button" time-frame="09:00" class="btn btn-default time-frame mb-10 disable-click btn-time-danger"><div class="time">09:00</div><div class="slot">Full</div></button><button type="button" time-frame="09:30" class="btn btn-default time-frame mb-10 disable-click btn-time-danger"><div class="time">09:30</div><div class="slot">Full</div></button><button type="button" time-frame="10:00" class="btn btn-default time-frame mb-10 disable-click btn-time-danger"><div class="time">10:00</div><div class="slot">Full</div></button><button type="button" time-frame="10:30" class="btn btn-default time-frame mb-10 disable-click btn-time-danger"><div class="time">10:30</div><div class="slot">Full</div></button><button type="button" time-frame="11:00" class="btn btn-default time-frame mb-10 disable-click btn-time-danger"><div class="time">11:00</div><div class="slot">Full</div></button><button type="button" time-frame="11:30" class="btn btn-default time-frame mb-10 disable-click btn-time-danger"><div class="time">11:30</div><div class="slot">Full</div></button><button type="button" time-frame="12:00" class="btn btn-default time-frame mb-10 disable-click btn-time-danger"><div class="time">12:00</div><div class="slot">Full</div></button><button type="button" time-frame="12:30" class="btn btn-default time-frame mb-10 disable-click btn-time-danger"><div class="time">12:30</div><div class="slot">Full</div></button><button type="button" time-frame="13:00" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">13:00</div><div class="slot"> </div></button><button type="button" time-frame="13:30" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">13:30</div><div class="slot"> </div></button><button type="button" time-frame="14:00" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">14:00</div><div class="slot"> </div></button><button type="button" time-frame="14:30" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">14:30</div><div class="slot"> </div></button><button type="button" time-frame="15:00" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">15:00</div><div class="slot"> </div></button><button type="button" time-frame="15:30" class="btn time-frame mb-10 theme-button btn-default"><div class="time theme-text">15:30</div><div class="slot"> </div></button><button type="button" time-frame="16:00" class="btn time-frame mb-10 theme-button btn-primary"><div class="time theme-text text-white">16:00</div><div class="slot"> </div></button><button type="button" time-frame="16:30" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">16:30</div><div class="slot"> </div></button><button type="button" time-frame="17:00" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">17:00</div><div class="slot"> </div></button><button type="button" time-frame="17:30" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">17:30</div><div class="slot"> </div></button><button type="button" time-frame="18:00" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">18:00</div><div class="slot"> </div></button><button type="button" time-frame="18:30" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">18:30</div><div class="slot"> </div></button><button type="button" time-frame="19:00" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">19:00</div><div class="slot"> </div></button><button type="button" time-frame="19:30" class="btn btn-default time-frame mb-10 theme-button"><div class="time theme-text">19:30</div><div class="slot"> </div></button></div>
+        </div>
+    </div>
+    <p class="text-bold theme-text">Dịch vụ</p>
+    <input id="customers2" style="width: 100%;"/>
+
+        <div class="col-xs-12 text-center" style="margin:10px">
+            <button type="button" class="btn btn-primary btn-block" id="ok" onclick="ok()" style="font-size: 22px;line-height: 40px;">
+                <span class="block-ui-message-container"><i class="icon-calendar mr-10"></i>
+                    <span class="block-ui-message" style="background-color: transparent;padding: 0;">
+                    </span>
+                </span>
+                Đặt lịch theo các thông tin trên
+            </button>
+        </div>
+    </div>
+
+
+<style> 
+    .btn-primary {
+    background: #e97ed1;
+    border-color: #e97ed1 !important;
+}
+ .disable-click {
+    cursor: wait;
+    pointer-events: none;
+    border: 1px solid #B9B9B9 !important;
+    color: #B9B9B9 !important;
+}
+ .time-frame .time {
+    font-weight: bold;
+}
+ .time-frame .slot {
+    font-size: 12px !important;
+    line-height: 15px;
+}
+ .theme-button {
+    border-color: #e97ed1 !important;
+}
+ .time-frame {
+    margin: 0 2px;
+    width: calc((100% - 28px)/7);
+    padding: 1%;
+}
+ .time-frame {
+    padding: 0;
+    min-height: 37px;
+}
+
+                .dropdown-header {
+                    border-width: 0 0 1px 0;
+                    text-transform: uppercase;
+                }
+
+                .dropdown-header > span {
+                    display: inline-block;
+                    padding: 10px;
+                    margin-right: 30px;
+                }
+
+                .dropdown-header > span:first-child {
+                    width: 50px;
+                }
+
+                .k-list-container > .k-footer {
+                    padding: 10px;
+                }
+
+                .selected-value {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 24px;
+                    height: 24px;
+                    background-size: 100%;
+                    margin-right: 5px;
+                    border-radius: 50%;
+                }
+
+                #customers-list .k-list-item-text {
+                    line-height: 1em;
+                    min-width: 300px;
+                }
+                
+                /* Material Theme padding adjustment*/
+                
+                .k-material #customers-list .k-list-item-text,
+                .k-material #customers-list .k-list-item-text.k-hover,
+                .k-materialblack #customers-list .k-list-item-text,
+                .k-materialblack #customers-list .k-list-item-text.k-hover {
+                    padding-left: 5px;
+                    border-left: 0;
+                }
+
+                #customers-list .k-list-item-text > span {
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 20px 10px 10px 5px;
+                }
+
+                #customers-list .k-list-item-text > span:first-child {
+                    -moz-box-shadow: inset 0 0 30px rgba(0,0,0,.3);
+                    -webkit-box-shadow: inset 0 0 30px rgba(0,0,0,.3);
+                    box-shadow: inset 0 0 30px rgba(0,0,0,.3);
+                    margin: 10px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+
+                #customers-list h3 {
+                    font-size: 1.2em;
+                    font-weight: normal;
+                    margin: 0 0 1px 0;
+                    padding: 0;
+                }
+
+                #customers-list p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: .8em;
+                }
+
+            </style>
+</style>
