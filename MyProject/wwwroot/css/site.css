@@ -6,8 +6,21 @@ html {
   html {
     font-size: 16px;
   }
+    .footer_mobile {
+        display: block;
+    }
+    .footer_web {
+        display: none
+    }
 }
 
+.footer_mobile {
+    display: none;
+}
+
+.footer_web {
+    display: block
+}
 html {
   position: relative;
   min-height: 100%;
