@@ -16,20 +16,42 @@
 </head>
 <body>
     <div>Giao diện chính</div>
-    <footer class="fixed-bottom footer container">  
-        <div style="background-color: blueviolet;display: flex;text-align: center;">
+    <footer class="fixed-bottom footer">  
+        <div style="background-color: rgba(236, 229, 190, 0.699);display: flex;text-align: center;">
             <div style="margin: 0 auto;display: flex;">
-                <div style="background-color: antiquewhite;padding: 10px;">
-                Items 1
+                <div style="padding: 10px;">
+                    <a href="#">Items 1</a>
                 </div>
-                <div style="background-color: rgb(39, 235, 0);padding: 10px;">
-                Items 2
+                <div style="padding: 10px;">
+                    <a href="#">Items 2</a>
                 </div>
-                <div style="background-color: rgb(0, 119, 255);padding: 10px;">
-                Items 3
+                <div style="padding: 10px;">
+                    <a href="#">Items 3</a>
+                </div>
+                <div style="padding: 10px;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        ☰
+                    </button>
                 </div>
             </div>
         </div>  
     </footer>
 </body>
+
+<style>
+    a{
+        text-decoration: unset; 
+    }
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-image: var(--phoenix-navbar-toggler-icon-bg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-color: black;
+    }
+</style>
 </html> 

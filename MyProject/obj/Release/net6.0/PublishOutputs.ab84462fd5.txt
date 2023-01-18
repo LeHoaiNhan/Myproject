@@ -1,7 +1,0 @@
-C:\Users\k\Desktop\.net core Company\MyProject\MyProject\obj\Release\net6.0\PubTmp\Out\MyProject.exe
-C:\Users\k\Desktop\.net core Company\MyProject\MyProject\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
-C:\Users\k\Desktop\.net core Company\MyProject\MyProject\obj\Release\net6.0\PubTmp\Out\appsettings.json
-C:\Users\k\Desktop\.net core Company\MyProject\MyProject\obj\Release\net6.0\PubTmp\Out\MyProject.dll
-C:\Users\k\Desktop\.net core Company\MyProject\MyProject\obj\Release\net6.0\PubTmp\Out\MyProject.deps.json
-C:\Users\k\Desktop\.net core Company\MyProject\MyProject\obj\Release\net6.0\PubTmp\Out\MyProject.runtimeconfig.json
-C:\Users\k\Desktop\.net core Company\MyProject\MyProject\obj\Release\net6.0\PubTmp\Out\MyProject.pdb
