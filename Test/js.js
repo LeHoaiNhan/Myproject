@@ -1,6 +1,6 @@
 
 $(document).ready(function(){ 
-    footer_menu_click("clipboard");
+    footer_menu_click("location");
 })
 function footer_menu_click(name)
 { 
