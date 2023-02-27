@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
  <!--CSS dùng chung-->
   <style>
+    *{font-family: 'SF Pro Display', sans-serif;}
     h1{font-size: 16px;margin: 0px;} 
     h2{font-size: 15px;margin: 0px;}
     h3{font-size: 14px;margin: 0px;}
@@ -68,12 +69,14 @@
     body {
         margin-bottom: 80px;
         width: 100%;
-    }
-
+      /* Resize the background image to cover the entire container */
+    } 
     .bg_backend {
         height: 100%;
         width: 100%;
-        background-color: bisque;
+        /*background-color: bisque;*/
+        background-image:url("Img/bg.jpg");
+        background-repeat: no-repeat; /* Do not repeat the image */
         position: fixed;
     }
 
@@ -85,7 +88,7 @@
     }
 
     .tag {
-        background-color: rgba(136, 146, 0, 0.719);
+        background-color: rgb(171, 162, 0);
         -webkit-backdrop-filter: blur(14px);
         backdrop-filter: blur(8px);
         box-shadow: 7px 7px 16px rgb(246 255 0 / 43%);
@@ -102,7 +105,7 @@
         position: absolute;
         height: 1000px;
         width: 100%;
-        background-color: rgb(255, 179, 179);
+      /*  background-color: rgb(255, 179, 179);*/
         margin-top: 50%;
     }
 
@@ -273,7 +276,7 @@
                         </div>
                         <div class="carousel-inner"  >
                         <div class="carousel-item" >                 
-                            <div class="text-start" style="height: 100%;background-color: rgb(205, 124, 186);">
+                            <div class="text-start" style="height: 100%;background-image: url('Img/bg1.jpg');">
                                 <h1>Title 3</h1>
                                 <p>day la cau lenh khuyen mai</p> 
                             </div> 
