@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JrnjRPb/y4jQtbmWU/Ryu8HPKBbhxJ0SEdUoO8lJOfJG5ZY3KR2ThKaBFU7lSPKpmfMeDPV/xmllvRlGWtNKiw==",
+  "dgSpecHash": "zORf9kIE8X4kML3ReBZnDnqY5VeEIYXP6MZ8tBGwplhPIf7JN94MnpHJZeytVa22mS4Kej7vKO6D866+v9VD2g==",
   "success": true,
-  "projectFilePath": "D:\\Github - LeHoaiNhan\\Myproject\\MyProjectV2\\MyProjectV2.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/lehoainhan/Documents/GitHub/Myproject/MyProjectV2/MyProjectV2.csproj",
+  "expectedPackageFiles": [
+    "/Users/lehoainhan/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/lehoainhan/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.17/microsoft.netcore.app.host.osx-x64.5.0.17.nupkg.sha512",
+    "/Users/lehoainhan/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

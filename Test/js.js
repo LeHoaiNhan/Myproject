@@ -1,6 +1,6 @@
 
 $(document).ready(function(){ 
-    footer_menu_click("menu");
+    footer_menu_click("location");
 })
 function footer_menu_click(name)
 { 
@@ -9,6 +9,11 @@ function footer_menu_click(name)
     document.getElementById("clipboard").style.display = 'none';
     document.getElementById("location").style.display = 'none';
     document.getElementById("menu").style.display = 'none';
+    document.getElementById("user").style.display = 'none';
     document.getElementById(name).style.display = 'block';
  
+}
+function user_click()
+{
+    footer_menu_click("user");
 }
