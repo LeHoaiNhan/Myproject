@@ -1,6 +1,6 @@
 
 $(document).ready(function(){ 
-    footer_menu_click("location");
+    footer_menu_click("user");
 })
 function footer_menu_click(name)
 { 
